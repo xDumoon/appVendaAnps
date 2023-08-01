@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="376dp"
+        android:layout_height="58dp"
+        android:fontFamily="sans-serif-black"
+        tools:text="Compra e Venda Anápolis"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+   <Button
+       android:id="@+id/buttoncomprar"
+       android:layout_width="109dp"
+       android:layout_height="58dp"
+       android:layout_marginStart="16dp"
+       android:soundEffectsEnabled="true"
+       tools:text="Comprar"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.53" />
+
+    <androidx.appcompat.widget.AppCompatButton
+       android:id="@+id/ButtonVender"
+       android:layout_width="109dp"
+       android:layout_height="58dp"
+       android:soundEffectsEnabled="true"
+       android:enabled="true"
+       tools:text="Vender"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.947"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.53" />
+
+
+
+    <TextView
+        android:id="@+id/informacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        tools:text="Número da Polícia Federal: 190 | Ajuda com o app: 62994491941"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.997" />
+
+    <TextView
+       android:id="@+id/bemvindo"
+       android:layout_width="257dp"
+       android:layout_height="73dp"
+       android:fontFamily="sans-serif-condensed-medium"
+       tools:text="Bem vindo(a), o que pretende fazer hoje?"
+       android:textAppearance="@style/TextAppearance.AppCompat.Large"
+       android:textColor="#9A1616"
+       android:textSize="28sp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.1"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.232" />
+
+    <TextView
+        android:id="@+id/atencao"
+        android:layout_width="389dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="4dp"
+        tools:text="ATENÇÃO\nEste app não realiza transações, apenas atuamos como uma vitrine para os vendedores. Para realizar qualquer compra contate o vendedor para saber mais informações"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.909" />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/txtTelaCadastro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
